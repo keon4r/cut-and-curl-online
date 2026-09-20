@@ -74,10 +74,10 @@ export const HOURS: { label: string; days: number[]; open: number | null; close:
   { label: "10am – 4pm", days: [0], open: 10, close: 16 },
 ];
 
-export function windowFor(date: Date): { open: number; close: number } | null {
+export function windowFor(date: Date): { open: number; close: number; label: string } | null {
   const entry = HOURS.find((h) => h.days.includes(date.getDay()));
   if (!entry || entry.open === null) return null;
-  return { open: entry.open, close: entry.close };
+  return { open: entry.open, close: entry.close, label: entry.label };
 }
 
 export function hoursLine(date: Date): string {
