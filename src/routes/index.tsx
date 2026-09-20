@@ -78,8 +78,7 @@ function Index() {
       </header>
 
       <section className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_-10%,oklch(0.655_0.1099_74.61/0.28),transparent_45%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_90%_120%,oklch(0.3913_0.1235_29.55/0.22),transparent_40%)]" />
+        <div className="hero-glow pointer-events-none absolute inset-0" />
         <div className="relative mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24">
           <p className="rise mb-6 font-mono text-xs uppercase tracking-[0.3em] text-brass">
             {SHOP.tagline}
