@@ -84,7 +84,10 @@ function Index() {
           <p className="rise mb-6 font-mono text-xs uppercase tracking-[0.3em] text-brass">
             {SHOP.tagline}
           </p>
-          <h1 className="rise animate-[hh-rise_0.8s_cubic-bezier(0.3,0.7,0,1)_0.05s_both] font-display text-[clamp(3.5rem,15vw,12rem)] leading-[0.82] tracking-tight text-bone-2">
+          <h1
+            style={{ animationDelay: "60ms" }}
+            className="rise font-display text-[clamp(3.5rem,15vw,12rem)] leading-[0.82] tracking-tight text-bone-2"
+          >
             HALVE
             <br />
             <span className="text-brass">&amp;</span> HATCH
