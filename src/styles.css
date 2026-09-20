@@ -13,8 +13,8 @@
  * The :root and .dark blocks define the actual color values using oklch.
  * All colors MUST use oklch format.
  *
- * This shop's identity is a near-black / antique-gold barbershop palette.
- * The page is dark-only by design, so :root itself carries the black scheme.
+ * This shop's identity is a light powder-blue / deep-navy barbershop palette.
+ * The same tailored palette is used consistently across the whole experience.
  */
 
 @theme inline {
@@ -79,16 +79,16 @@
 :root {
   --radius: 0.625rem;
 
-  /* Shop palette: carbon black, charcoal, antique gold and restrained ivory. */
-  --espresso: oklch(0.135 0.004 75);
-  --espresso-2: oklch(0.19 0.006 75);
-  --ink: oklch(0.095 0.003 75);
-  --bone: oklch(0.89 0.018 88);
-  --bone-2: oklch(0.965 0.012 88);
-  --bone-dim: oklch(0.7 0.022 86);
-  --oxblood: oklch(0.56 0.105 78);
-  --oxblood-2: oklch(0.67 0.125 82);
-  --brass: oklch(0.76 0.13 84);
+  /* Shop palette: powder blue, cool white, steel blue and deep navy. */
+  --espresso: oklch(0.94 0.025 235);
+  --espresso-2: oklch(0.975 0.012 235);
+  --ink: oklch(0.22 0.045 250);
+  --bone: oklch(0.34 0.045 248);
+  --bone-2: oklch(0.2 0.055 250);
+  --bone-dim: oklch(0.53 0.045 245);
+  --oxblood: oklch(0.48 0.11 245);
+  --oxblood-2: oklch(0.6 0.12 235);
+  --brass: oklch(0.57 0.13 240);
 
   --background: var(--espresso);
   --foreground: var(--bone);
@@ -106,8 +106,8 @@
   --accent-foreground: var(--espresso);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.76 0.13 84 / 18%);
-  --input: oklch(0.76 0.13 84 / 24%);
+  --border: oklch(0.48 0.11 245 / 20%);
+  --input: oklch(0.48 0.11 245 / 28%);
   --ring: var(--brass);
   --chart-1: var(--brass);
   --chart-2: var(--oxblood-2);
@@ -118,7 +118,7 @@
   --sidebar-foreground: var(--bone);
   --sidebar-primary: var(--brass);
   --sidebar-primary-foreground: var(--espresso);
-  --sidebar-accent: oklch(0.25 0.025 80);
+  --sidebar-accent: oklch(0.9 0.04 235);
   --sidebar-accent-foreground: var(--bone);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--brass);
@@ -141,8 +141,8 @@
   --accent-foreground: var(--espresso);
   --destructive: oklch(0.704 0.191 22.216);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.76 0.13 84 / 18%);
-  --input: oklch(0.76 0.13 84 / 24%);
+  --border: oklch(0.48 0.11 245 / 20%);
+  --input: oklch(0.48 0.11 245 / 28%);
   --ring: var(--brass);
   --chart-1: var(--brass);
   --chart-2: var(--oxblood-2);
@@ -153,7 +153,7 @@
   --sidebar-foreground: var(--bone);
   --sidebar-primary: var(--brass);
   --sidebar-primary-foreground: var(--espresso);
-  --sidebar-accent: oklch(0.25 0.025 80);
+  --sidebar-accent: oklch(0.9 0.04 235);
   --sidebar-accent-foreground: var(--bone);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--brass);
@@ -177,7 +177,7 @@
 
   ::selection {
     background-color: var(--brass);
-    color: var(--ink);
+    color: var(--espresso-2);
   }
 }
 
