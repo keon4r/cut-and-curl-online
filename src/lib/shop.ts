@@ -1,5 +1,5 @@
 import barberDeshawn from "@/assets/barber-deshawn.jpg";
-import barberMarco from "@/assets/barber-marco.jpg";
+import donToliverAsset from "@/assets/don-toliver.png.asset.json";
 import barberSaul from "@/assets/barber-saul.jpg";
 
 export const SHOP = {
@@ -50,7 +50,7 @@ export type Barber = {
 };
 
 export const BARBERS: Barber[] = [
-  { id: "marco", name: "Marco Reyes", role: "Master Barber", photo: barberMarco },
+  { id: "don", name: "Don Toliver", role: "Master Barber", photo: donToliverAsset.url },
   { id: "deshawn", name: "Deshawn Cole", role: "Fades & Lineups", photo: barberDeshawn },
   { id: "saul", name: "Saul Okafor", role: "Shaves & Rituals", photo: barberSaul },
 ];
