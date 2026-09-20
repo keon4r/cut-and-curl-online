@@ -1,3 +1,7 @@
+import barberDeshawn from "@/assets/barber-deshawn.jpg";
+import barberMarco from "@/assets/barber-marco.jpg";
+import barberSaul from "@/assets/barber-saul.jpg";
+
 export const SHOP = {
   name: "Halve & Hatch",
   tagline: "Est. 2011 · A barbershop, not a salon",
@@ -46,24 +50,9 @@ export type Barber = {
 };
 
 export const BARBERS: Barber[] = [
-  {
-    id: "marco",
-    name: "Marco Reyes",
-    role: "Master Barber",
-    photo: "/src/assets/barber-marco.jpg",
-  },
-  {
-    id: "deshawn",
-    name: "Deshawn Cole",
-    role: "Fades & Lineups",
-    photo: "/src/assets/barber-deshawn.jpg",
-  },
-  {
-    id: "saul",
-    name: "Saul Okafor",
-    role: "Shaves & Rituals",
-    photo: "/src/assets/barber-saul.jpg",
-  },
+  { id: "marco", name: "Marco Reyes", role: "Master Barber", photo: barberMarco },
+  { id: "deshawn", name: "Deshawn Cole", role: "Fades & Lineups", photo: barberDeshawn },
+  { id: "saul", name: "Saul Okafor", role: "Shaves & Rituals", photo: barberSaul },
 ];
 
 /** Opening windows in 24h decimal hours. `null` means the shop is dark. */
